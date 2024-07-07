@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .signUp {
+      height: 100vh;
+      width: 100vw;
+      border: 2px solid black;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+     
+    }
+    .sign {
+      height: 70vh;
+      width: 25vw;
+      text-align: center;
+      background-color:rgb(255, 221, 255);
+      border-radius:3%;
+      }
+      .sign input{
+        margin:8px auto;
+      }
+    .user input{
+       font-size: 20px;
+       height:4vh;
+       text-align: center;
+       
+    }
+    button{
+      width:15vw;
+      height:5vh;
+      background-color: rgb(234, 32, 234);
+
+    }
+  </style>
+  <body>
+    <div class="signUp">
+        <div class="sign">
+          <h1>SignUp</h1>
+          <div class="user">
+            <form>
+         <input type="text" placeholder="Enter your name" />
+            <br />
+          <input type="email" placeholder="Enter your email" />
+            <br />
+           <input type="password" placeholder="Your password" />
+            <br />
+        <input type="password" placeholder="Confirm password" />
+            <br />
+          </div>
+          <h3>Select Your Gender</h3>
+           <label for="1">
+              <input type="radio" value="CLassX" name="Gender" id="1" />Male
+            </label>
+            <label for="2">
+              <input type="radio" value="CLassXI" name="Gender" id="2" />Female
+            </label>
+          <br>
+          <button>Submit</button>
+        </form>
+          <h4>Already Sign in ? <a href="login.html">Login Here</a></h4>
+        </div>
+        </div>
+        </div>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,297 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .nav-items {
+        height: 50px;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .nav-items ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      .nav-items ul li {
+        margin-right: 26px;
+      }
+
+      .nav-items ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .brand {
+        font-size: 24px;
+        color: white;
+        margin-right: 20px;
+      }
+      .main-section {
+        max-width: 95%;
+        height: 50%;
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(253, 181, 253);
+        padding: 20px;
+      }
+      .image {
+        width: 24%;
+        height: 350px;
+        background-image: url("images/Woman2.jpg");
+        background-size: cover;
+      
+        background-position: center;
+      }
+      .slogan {
+        width: 60%;
+        padding: 20px;
+      }
+      .slogan li {
+        list-style: none;
+      }
+      .slogan h1 {
+        font-size: 36px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: black;
+      }
+      .slogan span {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        color: rgb(13, 0, 255);
+      }
+      .button-group {
+        margin-top: 20px;
+      }
+      .button-group button a{
+        font-size: 15px;
+        padding: 10px 20px  ;
+        border: none;
+        border-radius: 5px;
+        background-color: black;
+        color:white;
+        cursor: pointer;
+        text-decoration: none;
+       
+      }
+      .button-group button:hover a {
+        background-color: rgb(255, 102, 0);
+      }
+      
+      .box {
+        height: 90vh;
+        width: 98%;
+
+        margin: 80px 0px 0px 19px;
+        
+      }
+      #float {
+        background-image: url("https://www.bing.com/th?id=OSK.7a0b91d7567f8b1892f1a2fe36cbfc2c&pid=cdx&w=171&h=189&c=7");
+        height: 25vh;
+        width: 15vw;
+        background-size: cover;
+        float: left;
+        margin:0px 15px 25px 0px;
+      }
+      #float-2 {
+        background-image: url("https://hips.hearstapps.com/hmg-prod/images/strong-man-pulling-heavy-rope-at-gym-royalty-free-image-1692632948.jpg?crop=0.670xw:1.00xh;0.0769xw,0&resize=640:*");
+        height: 45vh;
+        width: 15vw;
+        background-size: cover;
+        float: right;
+        margin:0 0 0 15px;
+      }
+      footer {
+        background-color: rgb(41, 37, 37);
+        padding: 50px;
+        text-align: center;
+        color: white;
+        clear: both;
+      }
+      /* media query */
+      @media only screen and (min-width: 1635px) {
+        .image {
+          height: 12%;
+          width: 240px;
+        }
+      }
+      @media only screen and (max-width: 1024px) {
+        #float,
+        #float-2 {
+          width: 20vw;
+          height: 20vh;
+        }
+        .main-section {
+          height: 70vh;
+        }
+        .image{
+          height:200px;
+        }
+      }
+
+      @media only screen and (max-width: 768px) {
+        #float,
+        #float-2 {
+          width: 30vw;
+          height: 30vh;
+        }
+        .main-section {
+          height: 50vh;
+        }
+        .image{
+          height:170px;
+        }
+      }
+
+      @media only screen and (max-width: 480px) {
+        #float,
+        #float-2 {
+          width: 50vw;
+          height: 30vh;
+          float: none;
+          margin: 20px auto;
+        }
+
+        .main-section {
+          height: 70vh;
+        }
+        .image {
+        
+          height: 190px;
+          width:200px;
+          margin: 20px auto;
+
+        }
+        .button-group button a{
+          font-size: 10px;
+          padding: 10px 20px  ;
+         
+          
+        }
+      
+          
+
+          
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="Navbar">
+        <div class="nav-items">
+          <span class="brand">FITNESS</span>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="Nutrition.html">Nutrition</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">LogOut</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main-section">
+        <div class="image"></div>
+        <div class="slogan">
+          <h1>
+            <li>Welcome To</li>
+            <span><li>FITNESS GYM</li></span>
+          </h1>
+          <div class="button-group">
+            <button><a href="button.html">SignUp</a></button>
+            <button><a href="login.html">Login</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div id="float"></div>
+      <h3>What is body weight workout?</h3>
+      <p>
+        A bodyweight workout is a type of strength training exercise that uses
+        an individuals own weight to provide resistance against gravity1. These
+        exercises can enhance a range of biomotor abilities, including strength,
+        power, endurance, speed, flexibility, coordination, and balance1. Common
+        bodyweight exercises include push-ups, pull-ups, squats, and sit-ups1.
+        Bodyweight workouts are convenient because they generally do not require
+        any equipment and can be performed anywhere, making them ideal for those
+        who travel or do not have access to a gym1.<br /><br />
+        They are also cost-effective since they dont entail additional expenses
+        for equipment1. While bodyweight exercises are beneficial for people of
+        all ages, including the elderly, they may have limitations in terms of
+        muscle growth as the resistance provided is only as much as ones body
+        weight1. Nevertheless, they are a great way to improve overall fitness
+        and can be adapted to suit different fitness levels1. What is a Workout?
+        A workout is a session of physical exercise or activity, typically
+        designed to improve or maintain physical fitness, strength, and overall
+        health. It can involve various forms of exercise, such as cardio,
+        strength training, flexibility, or high-intensity interval training
+        (HIIT), among others.
+      </p>
+      <br />
+      <br />
+      <br />
+      <br />
+      s
+      <div id="float-2"></div>
+      <h3>What type of training should I do is to lose weight?</h3>
+      <p>
+        To lose weight, a combination of different types of training can be
+        effective. Here are some recommended workouts: Full-body workouts like
+        climbing rope can engage multiple muscle groups and increase calorie
+        burn1. Cardio exercises such as running, cycling, and swimming are great
+        for burning calories and improving cardiovascular health1. Strength
+        training is important not just for building muscle but also because
+        muscle tissue burns more calories than fat tissue, even at rest1.
+        High-Intensity Interval Training (HIIT) involves short bursts of intense
+        exercise alternated with low-intensity recovery periods. It’s known for
+        its effectiveness in burning fat in a short amount of time1.
+        Low-intensity steady-state cardio (LISS), like walking, can be a good
+        starting point if you’re new to exercise or have joint issues1.
+        Mind-body exercises such as yoga can help with flexibility and stress
+        reduction, which can be beneficial for weight loss1<br /><br />
+        Remember, consistency is key, and it’s important to combine these
+        exercises with a healthy diet for the best results. It’s also advisable
+        to consult with a healthcare provider before starting any new exercise
+        regimen, especially if you have any health concerns.<br /><br />
+        Additionally, you might want to explore popular diet plans that align
+        with your lifestyle and preferences: Mediterranean Diet: Plant-based,
+        heart-healthy2. DASH Diet: Low salt, blood pressure-friendly2. MIND
+        Diet: Brain-boosting, anti-aging2. Weight Watchers: Points-based,
+        flexible2. Intermittent Fasting: Time-restricted, metabolism-enhancing2.
+        Plant-based and Flexitarian Diets: Vegetarian, vegan, or moderate2.
+        Volumetrics Diet: Low calorie density, filling2. Mayo Clinic Diet:
+        Pyramid-based, habit-changing2. Low Carb Diets: Carb-restricted,
+        fat-burning2. Remember, it’s important to choose a diet that you can
+        stick to in the long term. Consult with a healthcare provider or a
+        nutritionist to tailor a plan that’s right for you, considering any
+        health conditions or dietary restrictions you may have.
+      </p>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 Fitness all the way. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

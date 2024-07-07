@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    .container {
+        width: 100%;
+        margin: 0px 0px 83px 0;
+        
+      }
+    .nav-items {
+        height: 50px;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .nav-items ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      .nav-items ul li {
+        margin-right: 26px;
+      }
+
+      .nav-items ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .brand {
+        font-size: 24px;
+        color: white;
+        margin-right: 20px;
+      }
+    .nutri{
+        width: 95vw;
+        height:80vh;
+       
+        background-image: url("images/nutri.jpg");
+        background-size: cover;
+        margin:24px;
+        
+    }
+    h2{
+        text-align: center;
+      }
+    .box {
+        height: 90vh;
+        width: 98%;
+
+        margin: 80px 0px 0px 19px;
+      }
+      #float {
+        background-image: url("https://www.shutterstock.com/image-photo/set-various-cereal-grains-on-260nw-1752413411.jpg");
+        background-repeat:no-repeat ;
+        height: 40vh;
+        width:35vw;
+        margin:0px 50px 30px 0px;
+        
+        float: left;
+      }
+    #hb{
+        clear:left;
+    }
+
+      #float-2 {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9ra6_C-6KTwygxFlWEi6DcryAFCOZgsiGAQ&s");
+        height:45vh;
+        width: 32vw;
+        background-size:cover;
+        float: right;
+        margin:50px;
+       
+      }
+      #float-3{
+        background-image: url("https://foodal.com/wp-content/uploads/2021/07/How-to-Get-the-Most-Out-of-Fresh-Berries.jpg");
+        height:40vh;
+        width: 32vw;
+        background-size:cover;
+        float: left;
+        margin:25px;
+       
+      }
+      footer {
+        background-color:rgb(41, 37, 37);
+        padding: 10px;
+        text-align: center;
+        color:white;
+        clear: both;
+      }
+      @media (min-width: 1200px) {
+        .nav-items ul li {
+          margin-right: 40px;
+        }
+        
+       /*.box {
+          height: 90vh;
+          width: 80%;
+          margin: 80px 0px 0px 19px;
+        }
+        #float, #float-2, #float-3 {
+          width: 30vw;
+          margin: 30px;
+        }*/
+      }
+    
+      /* Medium screens (992px to 1199px) */
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .nav-items ul li {
+          margin-right: 30px;
+        }
+        .box {
+          height: 80vh;
+          width: 90%;
+          margin: 60px 0px 0px 19px;
+        }
+        #float, #float-2, #float-3 {
+          width: 35vw;
+          margin: 20px;
+        }
+      }
+      
+      /* Small screens (768px to 991px) */
+      @media (min-width: 768px) and (max-width: 991px) {
+        .nav-items ul {
+          flex-direction: row;
+        }
+        .nav-items ul li {
+          margin-right: 23px;
+        }
+        .box {
+          height: auto;
+          width: 100%;
+          margin: 40px 0px 0px 19px;
+        }
+        #float, #float-2, #float-3 {
+          width: 50vw;
+          margin: 10px;
+        }
+        .nutri{
+           width:85vw;
+           height:50vh
+        }
+      }
+      @media (min-width: 480px) and (max-width: 767px) {
+        .nav-items ul {
+           flex-direction: row;
+         }
+        .nav-items ul li {
+           margin-right: 23px;
+         }
+        .box {
+           height: auto;
+           width: 100%;
+           margin: 20px 0px 0px 19px;
+         }
+         #float, #float-2, #float-3 {
+           width: 80vw;
+           margin: 10px;
+         }
+         .nutri{
+            width:75vw;
+            height:40vh
+         }
+       
+       }
+       
+       /* Mobile screens (below 480px) */
+       @media (max-width: 479px) {
+        .nav-items ul {
+           flex-wrap: wrap;
+         }
+        .nav-items ul li {
+           margin-right: 0;
+         }
+        .box {
+           height: auto;
+           width: 100%;
+           margin: 10px 0px 0px 19px;
+         }
+         #float, #float-2, #float-3 {
+           width: 90vw;
+           margin: 5px;
+         }
+       }
+       
+</style>
+<body>
+    <div class="container">
+    <div class="Navbar">
+        <div class="nav-items">
+          <span class="brand">FITNESS</span>
+          <ul>
+            <li><a href="fitness.html">Home</a></li>
+            <li><a href="Nutrition.html">Nutrition</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    <div class="nutri"></div>
+    </div>
+    <h2>Best Food For fitness</h2>
+    <div class="box">
+        <div id="float"></div>
+        <h3>Start With Whole-Grain Cereal</h3>
+        <p>
+          A bodyweight workout is a type of strength training exercise that uses
+          an individuals own weight to provide resistance against gravity1. These
+          exercises can enhance a range of biomotor abilities, including strength,
+          power, endurance, speed, flexibility, coordination, and balance1. Common
+          bodyweight exercises include push-ups, pull-ups, squats, and sit-ups1.
+          Bodyweight workouts are convenient because they generally do not require
+          any equipment and can be performed anywhere, making them ideal for those
+          who travel or do not have access to a gym1.
+        </p>
+        <br />
+        <br />
+        <br />
+        <br />
+  
+        <div id="float-2"></div>
+        <h3 id="hb">Black Bean Burger</h3>
+        <p>
+          To lose weight, a combination of different types of training can be
+          effective. Here are some recommended workouts: Full-body workouts like
+          climbing rope can engage multiple muscle groups and increase calorie
+          burn1. Cardio exercises such as running, cycling, and swimming are great
+          for burning calories and improving cardiovascular health1. Strength
+          training is important not just for building muscle but also because
+          muscle tissue burns more calories than fat tissue, even at rest1.
+          High-Intensity Interval Training (HIIT) involves short bursts of intense
+          exercise alternated with low-intensity recovery periods. It’s known for
+          
+        </p>
+      </div>
+      <div id="float-3"></div>
+      <h3>ABowl of Berries</h3>
+      <p>
+        To lose weight, a combination of different types of training can be
+        effective. Here are some recommended workouts: Full-body workouts like
+        climbing rope can engage multiple muscle groups and increase calorie
+        burn1. Cardio exercises such as running, cycling, and swimming are great
+        for burning calories and improving cardiovascular health1. Strength
+        training is important not just for building muscle but also because
+        muscle tissue burns more calories than fat tissue, even at rest1.
+        High-Intensity Interval Training (HIIT) involves short bursts of intense
+        exercise alternated with low-intensity recovery periods. It’s known for
+        
+      </p>
+    </div>
+    <footer>
+        <p>&copy; 2023 Fitness all the way. All rights reserved.</p>
+      </footer>
+  
+</body>
+</html>
